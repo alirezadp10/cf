@@ -1,1 +1,29 @@
-<html><h1>Hello World!</h1></html>
+<script>
+    var xhr = new XMLHttpRequest();
+    xhr.withCredentials = true;
+
+    xhr.addEventListener("readystatechange", function() {
+        if(this.readyState === 4) {
+            console.log(this.responseText);
+        }
+    });
+
+    xhr.open("GET", "https://api.jibimo.com/v2/user/refresh");
+    xhr.setRequestHeader("authority", "api.jibimo.com");
+    xhr.setRequestHeader("accept", "application/json, text/plain, */*");
+    xhr.setRequestHeader("accept-language", "fa");
+    xhr.setRequestHeader("authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiYjk4YTdhMGUxNjg3ZmYwMmE5M2U5ZmY2M2IxZWNiNGNmZjVjNWQ0YTc0YjY3NmU4OWY3Nzc0OWFhYWMzZjU3OWU5MzNhYjE1NjE4NTZhNjciLCJpYXQiOjE2OTY1Mjg0NjIuOTU1NTE3LCJuYmYiOjE2OTY1Mjg0NjIuOTU1NTIsImV4cCI6MTY5NjUzMDI2Mi45Mzc5NTgsInN1YiI6IjI2MDU5MSIsInNjb3BlcyI6WyJyZWdpc3RlcmVkLXVzZXIiXSwiY3VzdG9tX2RhdGEiOltdfQ.Ozy7IxT90o8a9OB62Cgf7y4IRl_N6zrZNnkEahOD57MwA3GxNRyaRMAE6iDMbmCgtqlATxKDKvDk-rdECqLAgsga0z6NjUtyCcdrk1XgiJNuhUjgZV4g5K_NoV7jjmUdoAY2rsbCFShxT9RYRLxGG_nasy7fmvFT0ZViUtEvhFoeXyfx9YFO_fvfzYosJt7oYp1gAq7SvzfvDSRxmKD_-iIqOWjtbMROm6fbr89T9kV3-Aw4mPrqLXwDQmjnt8l6v1Xwh3pwXh5zs4gYFf2GPpXJ67EVtoVulw5CZQSfJrmSOozNTsvyts2tk6EaD7JStcxSN2ZNaMHA_u69Si36wiFLbNpfQuSmBamBZbN5ZZPOCwQtRUmlNC16sPcRNJiLgCAQuvRjN7pPaur7nDmYOTWjYXGzJks2P4Id39dAOGOA12u_Jn0H-upb435akMGsfTVFd4_DiWoiWtwCbIlmB_3ecrwtDnpOY3v4oaEaYJVhMWn4hwsKXqZGcFRQn_UIfJRUiicJ6WIL8WKM_aB6lQstTzsIoa_otbRjBGmHRqp55mNynuAebuV_0AnDHF62loJd94ZXhRVU0flPPghI7LO9sL94QOYX9lrHfCeR3Od2j3fiXgx_KEQCKORaTVyghdsPWqFiolKLvLsUUA81_XGYQz0LxEEUQcGFzttuc40");
+    xhr.setRequestHeader("origin", "https://app.jibimo.com");
+    xhr.setRequestHeader("referer", "https://app.jibimo.com/");
+    xhr.setRequestHeader("sec-ch-ua", "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\"");
+    xhr.setRequestHeader("sec-ch-ua-mobile", "?0");
+    xhr.setRequestHeader("sec-ch-ua-platform", "\"Linux\"");
+    xhr.setRequestHeader("sec-fetch-dest", "empty");
+    xhr.setRequestHeader("sec-fetch-mode", "cors");
+    xhr.setRequestHeader("sec-fetch-site", "same-site");
+    xhr.setRequestHeader("user-agent", "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36");
+
+    xhr.send();
+
+
+</script>
